@@ -2,7 +2,6 @@
   <div>
     <div class="header">
       <div class="response-wrap header-inner">
-        <a class="logo" href="/"></a>
         <div class="nav">
           <div
             v-for="(item, index) in nav"
@@ -29,9 +28,6 @@
               </el-dropdown-menu>
             </el-dropdown>
           </div>
-          <a href="https://github.com/lfb/nodejs-koa-blog" target="_blank" class="nav-item">
-            Github
-          </a>
         </div>
         <div class="search">
           <el-input
@@ -147,7 +143,6 @@ export default {
   display: block;
   width: 100px;
   height: 56px;
-  background: url('https://cdn.boblog.com/logo.png') center center no-repeat;
   background-size: 100px;
 }
 .nav {

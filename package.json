@@ -5,13 +5,13 @@
   "config": {
     "nuxt": {
       "host": "localhost",
-      "port": "3000"
+      "port": "5555"
     }
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "start": "start nuxt",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint": "yarn lint:js"

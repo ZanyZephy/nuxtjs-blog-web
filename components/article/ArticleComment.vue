@@ -3,7 +3,7 @@
     <div class="comment">
       <div class="comment-from">
         <div class="comment-avatar">
-          <img src="https://cdn.boblog.com/avatar.png" alt="avatar" />
+          <img :src="require('@/assets/image/avatar.jpg')" alt="avatar" />
         </div>
         <div class="comment-textarea">
           <textarea
@@ -39,7 +39,7 @@
           class="comment-item"
         >
           <div class="comment-item-avatar">
-            <img src="https://cdn.boblog.com/avatar.png" alt="avatar" />
+            <img :src="require('@/assets/image/avatar.jpg')" alt="avatar" />
           </div>
           <div class="comment-item-detail">
             <div class="comment-item-user">
@@ -97,7 +97,7 @@
 
     <el-dialog
       :visible.sync="isLogin"
-      width="880px"
+      width="500px"
       top="0"
       :lock-scroll="true"
       :before-close="handleClose"

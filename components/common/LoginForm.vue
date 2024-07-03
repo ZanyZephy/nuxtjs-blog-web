@@ -1,12 +1,12 @@
 <template>
   <div class="form-wrap">
     <div class="form">
-      <div class="form-bg">
-        <img src="https://cdn.boblog.com/login-bg.png" alt="login" />
-      </div>
+      <!-- <div class="form-bg">
+        <img :src="require('@/assets/image/logo.jpg')" alt="login" />
+      </div> -->
       <div class="form-list">
         <div class="logo">
-          <img src="https://cdn.boblog.com/logo.png" alt="logo" />
+          <img :src="require('@/assets/image/logo.jpg')" alt="logo" />
         </div>
         <div v-if="!isLogin" class="form-item">
           <input
@@ -172,12 +172,17 @@ export default {
 .form-bg {
   width: 500px;
   font-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   img {
     width: 100%;
+    height: auto;
   }
 }
 .form-list {
+  padding: 20px 0;
   flex: 1;
   display: flex;
   flex-direction: column;
